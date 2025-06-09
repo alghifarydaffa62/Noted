@@ -1,10 +1,19 @@
 import '../App.css'
+import MainLayout from '../layouts/MainLayout'
+import SearchBar from '../components/searchBar'
+import AddWorkspace from '../components/buttonAdd'
+import LoginButton from '../components/loginButton'
 
 function Home() {
   return (
-    <>
-      <h1 className='text-4xl text-center font-mono font-semibold'>Noted - To-Do List Website</h1>
-    </>
+    <MainLayout>
+      <div className='flex justify-center gap-4'>
+        <AddWorkspace/>
+        <LoginButton/>
+      </div>
+      
+      <SearchBar/>
+    </MainLayout>
   )
 }
 
